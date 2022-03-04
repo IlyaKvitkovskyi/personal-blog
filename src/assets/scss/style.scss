@@ -8,6 +8,7 @@ html {
 body {
     background-color: #181818;
     font-size: 1.4rem;
+    line-height: 1.5;
     color: $white;
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
@@ -18,6 +19,11 @@ body {
 // Blocks
 @import "blocks/page.scss";
 @import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/search.scss";
 @import "blocks/sidebar.scss";
 @import "blocks/main.scss";
 @import "blocks/container.scss";
+@import "blocks/profile.scss";
+@import "blocks/social.scss";
+@import "blocks/btn.scss";
