@@ -3,6 +3,7 @@ layout: default
 title: Api | Home
 ---
 
+<!-- Stories -->
 <div class="stories">
   <div class="stories__item">
     <img class="stories__preview" src="assets/images/stories/stories1.jpg" alt="" />
@@ -24,4 +25,21 @@ title: Api | Home
     <div class="stories__title">Осень пришла</div>
     <time class="stories__date" datetime="2020-08-28 19:21">28.08.2020</time>
   </div>
-</div> <!--/.stories -->
+</div>
+<!--/.stories -->
+
+<!-- Add post -->
+<div class="add-post">
+  <form class="add-post__form" action="/" method="post">
+    <textarea class="add-post__textarea" name="post-text" placeholder="Напишите что-нибудь"></textarea>
+    <div class="add-post__form-actions">
+      <label class="add-post__file" for="add-post-file">
+        <input id="add-post-file" type="file" />
+      </label>
+      <button class="add-post__send" type="submit">
+        <img class="add-post__img" src="assets/images/send.svg" alt="Отправить">
+      </button>
+    </div>
+  </form>
+</div>
+<!-- /.Add post -->
