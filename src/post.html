@@ -56,7 +56,7 @@ title: Post
 
     <!-- related -->
     <div class="related">
-      <h3 class="related__title">Интересно почитать</h3>
+      <h3 class="post__subtitle">Интересно почитать</h3>
 
       <ul class="related__list">
         <li class="related__list-item">
@@ -67,7 +67,7 @@ title: Post
         </li>
         <li class="related__list-item">
           <h4 class="related__list-title">
-            <a href="#">Как писать код быстро и  ...</a>
+            <a href="#">Как писать код быстро и ...</a>
           </h4>
           <time class="related__list-date" datetime="2020-06-21 19:21">21.06.2020</time>
         </li>
@@ -87,7 +87,78 @@ title: Post
     </div>
     <!-- /.related -->
 
+    <!-- comments -->
+
+    <h3 class="post__subtitle">Обсуждение</h3>
+
+    <form class="form" action="/" method="post">
+      <div class="form__group">
+        <textarea
+          class="form__control form__control--textarea"
+          name="comment-text"
+          placeholder="Текст комментария"
+        ></textarea>
+        <span class="form__line"></span>
+      </div>
+      <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+    </form>
+
+    <ul class="comments">
+      <li class="comments__item">
+        <div class="comments__header">
+          <img class="comments__avatar" src="assets/images/avatar-mini.png" alt="avatar" />
+
+          <div class="comments__author">
+            <div class="comments__name">Александр Маковийчук</div>
+            <time class="comments__pubdate" datetime="2020-12-21 19:21">1 неделю назад</time>
+          </div>
+        </div>
+        <div class="comments__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi asperiores, quos
+          consequuntur impedit corrupti iste pariatur et at numquam alias tenetur odio quasi illo
+          repellat voluptatibus non!
+        </div>
+        <button class="comments__reply" type="button">Ответить</button>
+
+        <ul class="comments">
+          <li class="comments__item">
+            <div class="comments__header">
+              <img class="comments__avatar" src="assets/images/avatar-2.png" alt="avatar" />
+
+              <div class="comments__author">
+                <div class="comments__name">Евгений Чунихин</div>
+                <time class="comments__pubdate" datetime="2020-12-21 19:21">1 неделю назад</time>
+              </div>
+            </div>
+            <div class="comments__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi asperiores, quos
+              consequuntur impedit corrupti iste pariatur et at numquam alias tenetur odio quasi
+              illo repellat voluptatibus non!
+            </div>
+            <button class="comments__reply" type="button">Ответить</button>
+          </li>
+        </ul>
+      </li>
+
+      <li class="comments__item">
+        <div class="comments__header">
+          <img class="comments__avatar" src="assets/images/avatar-mini.png" alt="avatar" />
+
+          <div class="comments__author">
+            <div class="comments__name">Александр Маковийчук</div>
+            <time class="comments__pubdate" datetime="2020-12-21 19:21">1 неделю назад</time>
+          </div>
+        </div>
+        <div class="comments__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi asperiores, quos
+          consequuntur impedit corrupti iste pariatur et at numquam alias tenetur odio quasi illo
+          repellat voluptatibus non!
+        </div>
+        <button class="comments__reply" type="button">Ответить</button>
+      </li>
+    </ul>
+    <!-- /.comments -->
   </div>
   <!-- /.post__content -->
 </article>
-<!-- /.Post -->
+<!-- /.post -->
