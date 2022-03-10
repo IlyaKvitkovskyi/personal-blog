@@ -53,7 +53,6 @@ function serve() {
     server: {
       baseDir: './' + distPath,
     },
-    notify: false,
   });
 }
 
