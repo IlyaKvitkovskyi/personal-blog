@@ -13,6 +13,10 @@ body {
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     'Noto Color Emoji';
+
+  &.no-scroll {
+    overflow: hidden;
+  }  
 }
 
 a {
@@ -43,3 +47,4 @@ a {
 @import 'blocks/form.scss';
 @import 'blocks/work.scss';
 @import 'blocks/cabinet.scss';
+@import 'blocks/modal.scss';
