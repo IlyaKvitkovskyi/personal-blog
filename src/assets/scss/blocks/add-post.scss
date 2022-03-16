@@ -13,7 +13,8 @@
 
 .add-post__textarea {
   display: block;
-  width: 80%;
+  overflow: hidden;
+  flex-grow: 1;
   height: 27px;
   border: none;
   background: transparent;
@@ -31,7 +32,8 @@
 .add-post__form-actions {
   display: flex;
   justify-content: flex-end;
-  width: 20%;
+  flex-shrink: 0;
+  width: 120px;
 }
 
 .add-post__file,

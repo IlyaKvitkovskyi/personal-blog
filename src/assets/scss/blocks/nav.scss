@@ -1,5 +1,24 @@
+.nav {
+  &--mobile {
+    display: none;
+    margin: 3rem 0;
+  }
+
+  @include breakpoint($tablet-bp) {
+    display: none;
+
+    &--mobile {
+      display: block;
+    }
+  }
+}
+
 .nav__list {
   display: flex;
+
+  @include breakpoint($tablet-bp) {
+    flex-direction: column;
+  }
 }
 
 .nav__item {
@@ -15,6 +34,14 @@
       display: block;
     }
   }
+
+  @include breakpoint($tablet-bp) {
+    &:hover {
+      .nav__link {
+        background: none;
+      }
+    }
+  }
 }
 
 .nav__link {
@@ -24,13 +51,13 @@
   line-height: 1.2;
   text-transform: uppercase;
   color: $white;
-  transition: background-color .2s linear;
-  
+  transition: background-color 0.2s linear;
+
   &.has-subnav {
     position: relative;
     padding-right: 3.5rem;
     &::after {
-      content: "";
+      content: '';
       display: block;
       border-style: solid;
       border-width: 6px 5px 0 5px;
@@ -40,5 +67,11 @@
       transform: translateY(-50%);
       right: 1.35rem;
     }
+  }
+
+  @include breakpoint($tablet-bp) {
+    font-size: 1.6rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
