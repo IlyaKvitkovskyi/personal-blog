@@ -2,6 +2,7 @@
 .idea
 .idea/*
 .vscode
+.sass-cache
 *.sublime*
 npm-debug.*
 dist/
