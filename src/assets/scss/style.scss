@@ -15,10 +15,15 @@ body {
     'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     'Noto Color Emoji';
 
-  &.no-scroll,
-  &.show-sidebar {
+  &.no-scroll {
     overflow: hidden;
-  }  
+  }
+
+  @include breakpoint($tablet-bp) {
+    &.show-sidebar {
+      overflow: hidden;
+    }
+  }
 }
 
 a {

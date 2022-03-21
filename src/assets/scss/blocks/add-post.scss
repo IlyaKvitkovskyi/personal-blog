@@ -12,14 +12,14 @@
 
 .add-post__form {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .add-post__textarea {
   display: block;
   overflow: hidden;
   flex-grow: 1;
-  height: 27px;
+  height: 34px;
   border: none;
   background: transparent;
   outline: none;
